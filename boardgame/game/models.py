@@ -15,6 +15,9 @@ class Game(models.Model):
 
     objects = GameManager()
 
+    class Meta:
+        unique_together = ('name', 'version')
+
     def __unicode__(self):
         return u'{} {}'.format(self.name, self.version)
 
