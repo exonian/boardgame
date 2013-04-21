@@ -1,3 +1,14 @@
 from django.db import models
 
-# Create your models here.
+
+class Game(models.Model):
+    title = models.CharField(max_length=255)
+    version = models.CharField(max_length=15)
+    attributes = models.ManyToManyField('attributes',
+                                        blank=True,
+                                        null=True)
+
+
+class Attribute(models.Model):
+    name = models.CharField(max_length=50)
+    abbreviation = models.CharField(max_length=8)
