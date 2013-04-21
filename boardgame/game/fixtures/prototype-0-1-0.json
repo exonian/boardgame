@@ -1,0 +1,56 @@
+[
+{
+    "pk": 1, 
+    "model": "game.attribute", 
+    "fields": {
+        "abbreviation": "A", 
+        "name": "Agility"
+    }
+},
+{
+    "pk": 2, 
+    "model": "game.attribute", 
+    "fields": {
+        "abbreviation": "S", 
+        "name": "Strength"
+    }
+},
+{
+    "pk": 3, 
+    "model": "game.attribute", 
+    "fields": {
+        "abbreviation": "C", 
+        "name": "Courage"
+    }
+},
+{
+    "pk": 4, 
+    "model": "game.attribute", 
+    "fields": {
+        "abbreviation": "I", 
+        "name": "Intelligence"
+    }
+},
+{
+    "pk": 1, 
+    "model": "game.game", 
+    "fields": {
+        "attributes": [
+            [
+                "Agility"
+            ], 
+            [
+                "Strength"
+            ], 
+            [
+                "Courage"
+            ], 
+            [
+                "Intelligence"
+            ]
+        ], 
+        "version": "0.1.0", 
+        "name": "Prototype"
+    }
+}
+]
