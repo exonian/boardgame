@@ -8,7 +8,13 @@ class Game(models.Model):
                                         blank=True,
                                         null=True)
 
+    def __unicode__(self):
+        return u'{} {}'.format(self.title, self.version)
+
 
 class Attribute(models.Model):
     name = models.CharField(max_length=50)
     abbreviation = models.CharField(max_length=8)
+
+    def __unicode__(self):
+        return self.name
