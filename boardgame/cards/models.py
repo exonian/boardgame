@@ -41,3 +41,28 @@ class Modifier(models.Model):
 
     def __unicode__(self):
         return u'{} {} {}'.format(self.attribute, self.operator, self.magnitude)
+
+
+class HeroComponent(models.Model):
+
+    name = models.CharField(max_length=50)
+    modifiers = models.ForeignKey(
+        Modifier,
+        related_name='related_%(class)ss'
+    )
+    special_rules = models.TextField(blank=True)
+    flavour_text = models.TextField(blank=True)
+
+    class Meta:
+        abstract = True
+
+    def __unicode__(self):
+        return u'{}'.format(self.name)
+
+
+class Trait(HeroComponent):
+    pass
+
+
+class Profession(HeroComponent):
+    pass
