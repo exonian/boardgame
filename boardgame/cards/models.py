@@ -46,10 +46,9 @@ class Modifier(models.Model):
 class HeroComponent(models.Model):
 
     name = models.CharField(max_length=50)
-    modifiers = models.ForeignKey(
-        Modifier,
-        related_name='related_%(class)ss'
-    )
+    modifiers = generic.GenericRelation(Modifier,
+                                        content_type_field="component_type",
+                                        object_id_field="component_id")
     special_rules = models.TextField(blank=True)
     flavour_text = models.TextField(blank=True)
 
