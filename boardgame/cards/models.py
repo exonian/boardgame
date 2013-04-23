@@ -72,3 +72,12 @@ class DefenceType(models.Model):
 
     def __unicode__(self):
         return u'{}'.format(self.name)
+
+
+class Defence(models.Model):
+    name = models.CharField(max_length=50)
+    defence_type = models.ForeignKey(DefenceType)
+    use_count = models.IntegerField(default=0)
+
+    def __unicode__(self):
+        return u'{}'.format(self.name)
