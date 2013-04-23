@@ -1,0 +1,452 @@
+[
+{
+    "pk": 1, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Armourer", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 2, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Assassin", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 3, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Baker", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 4, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Barbarian", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 5, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Blacksmith", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 6, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Bowman", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 7, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Brigand", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 8, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Butcher", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 9, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Cook", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 10, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Dwarf", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 11, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Elf", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 12, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Executioner", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 13, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Falconer", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 14, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Farmer", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 15, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Farmhand", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 16, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Fisherman", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 17, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Gaoler", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 18, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Gardener", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 19, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Gentleman", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 20, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Giant", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 21, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Goblin", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 22, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Golem", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 23, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Guardsman", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 24, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Halfling", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 25, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Innkeeper", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 26, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Jester", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 27, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Knight", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 28, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Merchant", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 29, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Monk", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 30, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Ninja", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 31, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Orc", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 32, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Orphan", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 33, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Outlaw", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 34, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Pirate", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 35, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Poacher", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 36, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Priest", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 37, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Prince", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 38, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Princess", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 39, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Sellsword", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 40, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Sheep", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 41, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Shepherd", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 42, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Squire", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 43, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Stableboy", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 44, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Swineherd", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 45, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Thief", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 46, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Troll", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 47, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Troubadour", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 48, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Werewolf", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 49, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Wizard", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 50, 
+    "model": "cards.profession", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Woodcutter", 
+        "flavour_text": ""
+    }
+}
+]

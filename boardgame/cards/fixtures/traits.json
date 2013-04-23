@@ -1,0 +1,407 @@
+[
+{
+    "pk": 1, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Acrobatic", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 2, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Agile", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 3, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Apprentice", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 4, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Armoured", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 5, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Arrogant", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 6, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Arthritic", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 7, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Barrel-chested", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 8, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Berserk", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 9, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Brutish", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 10, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Charmed", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 11, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Clumsy", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 12, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Craven", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 13, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Cunning", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 14, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Dragonborn", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 15, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Dread", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 16, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Drunken", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 17, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Elderly", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 18, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Expert", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 19, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Fat", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 20, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Fearless", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 21, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Fearsome", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 22, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Feral", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 23, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Gallant", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 24, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Gangly", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 25, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Heroic", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 26, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Highborn", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 27, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Inbred", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 28, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Learned", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 29, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Left-handed", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 30, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Lithe", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 31, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Lucky", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 32, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Mad", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 33, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Mysterious", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 34, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Plucky", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 35, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Portly", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 36, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Puny", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 37, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Scholarly", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 38, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Senile", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 39, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Skeletal", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 40, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Skinny", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 41, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Stout", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 42, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Timid", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 43, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Treacherous", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 44, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Undead", 
+        "flavour_text": ""
+    }
+},
+{
+    "pk": 45, 
+    "model": "cards.trait", 
+    "fields": {
+        "special_rules": "", 
+        "name": "Zombie", 
+        "flavour_text": ""
+    }
+}
+]

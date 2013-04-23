@@ -1,0 +1,543 @@
+[
+{
+    "pk": 1, 
+    "model": "cards.defencetype", 
+    "fields": {
+        "name": "Active"
+    }
+},
+{
+    "pk": 2, 
+    "model": "cards.defencetype", 
+    "fields": {
+        "name": "Enemy"
+    }
+},
+{
+    "pk": 3, 
+    "model": "cards.defencetype", 
+    "fields": {
+        "name": "Passive exhaustible"
+    }
+},
+{
+    "pk": 4, 
+    "model": "cards.defencetype", 
+    "fields": {
+        "name": "Passive beatable"
+    }
+},
+{
+    "pk": 5, 
+    "model": "cards.defencetype", 
+    "fields": {
+        "name": "Obstacle"
+    }
+},
+{
+    "pk": 1, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Arrows", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Bear", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Bear trap", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 4, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Black knight", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 5, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Cake", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 6, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Creeper", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 7, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Delicious apple", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 8, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Dragon", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 9, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Fireballs", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 10, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Flood trap", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 11, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Funny smell", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 12, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Ghost", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 13, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Giant rats", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 14, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Hall of mirrors", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 15, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Headcrab", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 16, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Hopper mine", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 17, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Lava flow", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 18, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Lego brick", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 19, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Low wall", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 20, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Minotaur", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 21, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Moat", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 22, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Mummy", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 23, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Noose", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 24, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Nutsy and Trigger", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 25, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Obvious pit", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 26, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Portcullis", 
+        "defence_type": [
+            "Obstacle"
+        ]
+    }
+},
+{
+    "pk": 27, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Quicksand", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 28, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Revolving door", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 29, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Rock fall", 
+        "defence_type": [
+            "Obstacle"
+        ]
+    }
+},
+{
+    "pk": 30, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Rolling boulder", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 31, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Rope bridge", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 32, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Sharks with laser beams", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 33, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Skeletons", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 34, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Sleeping guards", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 35, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Snake pit", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 36, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Snakes behind glass", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 37, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Spiders", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 38, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Spider's web", 
+        "defence_type": [
+            "Passive beatable"
+        ]
+    }
+},
+{
+    "pk": 39, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Spike ceiling and floor", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 40, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Spike wall", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 41, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Trap door", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 42, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Trash compactor", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 43, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Travelator", 
+        "defence_type": [
+            "Active"
+        ]
+    }
+},
+{
+    "pk": 44, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Two-headed dog", 
+        "defence_type": [
+            "Enemy"
+        ]
+    }
+},
+{
+    "pk": 45, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Uneven slab", 
+        "defence_type": [
+            "Passive exhaustible"
+        ]
+    }
+},
+{
+    "pk": 46, 
+    "model": "cards.defence", 
+    "fields": {
+        "use_count": 0, 
+        "name": "Web of lasers", 
+        "defence_type": [
+            "Passive beatable"
+        ]
+    }
+}
+]
