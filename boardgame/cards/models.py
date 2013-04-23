@@ -77,11 +77,21 @@ class Profession(HeroComponent):
     pass
 
 
+class DefenceTypeManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
+
+
 class DefenceType(models.Model):
     name = models.CharField(max_length=50)
 
+    objects = DefenceTypeManager()
+
     def __unicode__(self):
         return u'{}'.format(self.name)
+
+    def natural_key(self):
+        return (self.name,)
 
 
 class Defence(models.Model):
