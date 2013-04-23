@@ -5,6 +5,11 @@ from django.db import models
 from game.models import Attribute, Game
 
 
+class ModifierManager(models.Manager):
+    def get_by_natural_key(self, attribute, operator, magnitude):
+        return self.get(attribute=attribute, operator=operator, magnitude=magnitude)
+
+
 class Modifier(models.Model):
 
     PLUS = '+'
@@ -39,8 +44,13 @@ class Modifier(models.Model):
     component = generic.GenericForeignKey('component_type',
                                           'component_id')
 
+    objects = ModifierManager()
+
     def __unicode__(self):
         return u'{} {} {}'.format(self.attribute, self.operator, self.magnitude)
+
+    def natural_key(self):
+        return (self.attribute, self.operator, self.magnitude)
 
 
 class HeroComponent(models.Model):
