@@ -1,7 +1,8 @@
-{% extends 'base.html' %}
+{% extends 'basic.html' %}
+
+{% block title %}Game versions{% endblock %}
 
 {% block content %}
-    <h1>Game versions</h1>
     <ul>
     {% for object in object_list %}
         <li>
