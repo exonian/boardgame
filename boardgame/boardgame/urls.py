@@ -4,5 +4,6 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'', include('game.urls', 'game', 'game')),
     url(r'^admin/', include(admin.site.urls)),
 )
