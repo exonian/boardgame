@@ -1,3 +1,4 @@
 ipdb
 django
 south
+django-debug-toolbar
