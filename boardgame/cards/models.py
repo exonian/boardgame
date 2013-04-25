@@ -1,8 +1,27 @@
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes import generic
+from django.core.urlresolvers import reverse
 from django.db import models
 
 from game.models import Attribute, Game
+
+
+class CardModel(models.Model):
+
+    class Meta:
+        abstract = True
+
+    def get_absolute_url(self):
+        return reverse(
+            'cards:hero-component-detail',
+            kwargs={
+                'hero_component': self.__class__.__name__,
+                'pk': self.pk,
+            }
+        )
+
+    def get_class_name(self):
+        return self.__class__.__name__
 
 
 class Modifier(models.Model):
@@ -43,7 +62,7 @@ class Modifier(models.Model):
         return u'{} {} {}'.format(self.attribute, self.operator, self.magnitude)
 
 
-class HeroComponent(models.Model):
+class HeroComponent(CardModel):
 
     name = models.CharField(max_length=50)
     modifiers = generic.GenericRelation(Modifier,
@@ -72,7 +91,7 @@ class DefenceTypeManager(models.Manager):
         return self.get(name=name)
 
 
-class DefenceType(models.Model):
+class DefenceType(CardModel):
     name = models.CharField(max_length=50)
 
     objects = DefenceTypeManager()
@@ -84,7 +103,7 @@ class DefenceType(models.Model):
         return (self.name,)
 
 
-class Defence(models.Model):
+class Defence(CardModel):
     name = models.CharField(max_length=50)
     defence_type = models.ForeignKey(DefenceType)
     use_count = models.IntegerField(default=0)

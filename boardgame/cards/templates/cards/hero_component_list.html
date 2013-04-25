@@ -1,9 +1,13 @@
 {% extends 'basic.html' %}
 
+{% block pretitle %}
+    <a href="{% url 'cards:index' %}">Cards index</a>
+{% endblock pretitle %}
+
 {% block content %}
     <ul>
     {% for object in object_list %}
-        <li>{{ object }}</li>
+        <li><a href="{{ object.get_absolute_url }}">{{ object }}</a></li>
     {% endfor %}
     </ul>
 {% endblock content %}

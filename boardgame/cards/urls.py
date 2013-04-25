@@ -1,7 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic import ListView, TemplateView
 
-from .models import Defence, Profession, Trait
 import views
 
 urlpatterns = patterns('',
@@ -12,5 +11,9 @@ urlpatterns = patterns('',
     url(r'^(?P<hero_component>[a-zA-Z]+)/$', 
         views.HeroComponentListView.as_view(),
         name='hero-component-list',
+    ),
+    url(r'^(?P<hero_component>[a-zA-Z]+)/(?P<pk>\d+)/$', 
+        views.HeroComponentDetailView.as_view(),
+        name='hero-component-detail',
     ),
 )

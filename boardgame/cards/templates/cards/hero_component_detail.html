@@ -1,0 +1,8 @@
+{% extends 'basic.html' %}
+
+{% block pretitle %}
+    <a href="{% url 'cards:hero-component-list' object.get_class_name %}">{{ object.get_class_name }} index</a>
+{% endblock pretitle %}
+
+{% block content %}
+{% endblock content %}
