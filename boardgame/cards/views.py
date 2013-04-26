@@ -8,7 +8,7 @@ class HeroComponentMixin(object):
 
     def get_queryset(self):
         model = self.get_model()
-        queryset = model._default_manager.all()
+        queryset = model._default_manager.prefetch_related('modifiers')
         return queryset
             
     def get_model(self):

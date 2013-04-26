@@ -7,7 +7,19 @@
 {% block content %}
     <ul>
     {% for object in object_list %}
-        <li><a href="{{ object.get_absolute_url }}">{{ object }}</a></li>
+        <li>
+            <a href="{{ object.get_absolute_url }}">{{ object }}</a>
+            {% if object.modifiers or object.special_rules %}
+                <ul>
+                {% for modifier in object.modifiers.all %}
+                    <li>{{ modifier }}</li>
+                {% endfor %}
+                {% if object.special_rules %}
+                    <li>{{ object.special_rules }}</li>
+                {% endif %}
+                </ul>
+            {% endif %}
+        </li>
     {% endfor %}
     </ul>
 {% endblock content %}
