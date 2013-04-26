@@ -1,4 +1,5 @@
 from django.db.models.loading import get_model
+from django.core.exceptions import ImproperlyConfigured
 from django.http import Http404
 from django.views.generic import DetailView, ListView
 
