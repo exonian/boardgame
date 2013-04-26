@@ -2,3 +2,4 @@ ipdb
 django
 south
 django-debug-toolbar
+django-grappelli
