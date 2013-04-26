@@ -63,7 +63,7 @@ class HeroComponent(models.Model):
         return reverse(
             'cards:hero-component-detail',
             kwargs={
-                'hero_component': self.__class__.__name__,
+                'hero_component': self.__class__.__name__.lower(),
                 'pk': self.pk,
             }
         )
