@@ -2,7 +2,14 @@ from django.contrib import admin
 
 from . import models
 
-admin.site.register(models.Modifier)
+
+class ModifierOptions(admin.ModelAdmin):
+    related_lookup_fields = {
+        'generic': [['component_type', 'component_id']],
+    }
+
+
+admin.site.register(models.Modifier, ModifierOptions)
 admin.site.register(models.Trait)
 admin.site.register(models.Profession)
 admin.site.register(models.Defence)
