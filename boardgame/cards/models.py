@@ -6,24 +6,6 @@ from django.db import models
 from game.models import Attribute, Game
 
 
-class CardModel(models.Model):
-
-    class Meta:
-        abstract = True
-
-    def get_absolute_url(self):
-        return reverse(
-            'cards:hero-component-detail',
-            kwargs={
-                'hero_component': self.__class__.__name__,
-                'pk': self.pk,
-            }
-        )
-
-    def get_class_name(self):
-        return self.__class__.__name__
-
-
 class Modifier(models.Model):
 
     PLUS = '+'
@@ -62,7 +44,7 @@ class Modifier(models.Model):
         return u'{} {} {}'.format(self.attribute, self.operator, self.magnitude)
 
 
-class HeroComponent(CardModel):
+class HeroComponent(models.Model):
 
     name = models.CharField(max_length=50)
     modifiers = generic.GenericRelation(Modifier,
@@ -76,6 +58,18 @@ class HeroComponent(CardModel):
 
     def __unicode__(self):
         return u'{}'.format(self.name)
+
+    def get_absolute_url(self):
+        return reverse(
+            'cards:hero-component-detail',
+            kwargs={
+                'hero_component': self.__class__.__name__,
+                'pk': self.pk,
+            }
+        )
+
+    def get_class_name(self):
+        return self.__class__.__name__
 
 
 class Trait(HeroComponent):
@@ -91,7 +85,7 @@ class DefenceTypeManager(models.Manager):
         return self.get(name=name)
 
 
-class DefenceType(CardModel):
+class DefenceType(models.Model):
     name = models.CharField(max_length=50)
 
     objects = DefenceTypeManager()
@@ -103,7 +97,7 @@ class DefenceType(CardModel):
         return (self.name,)
 
 
-class Defence(CardModel):
+class Defence(models.Model):
     name = models.CharField(max_length=50)
     defence_type = models.ForeignKey(DefenceType)
     use_count = models.IntegerField(default=0)
