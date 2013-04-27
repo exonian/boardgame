@@ -1,4 +1,5 @@
 {% extends 'basic.html' %}
+{% load modifier_tags %}
 
 {% block pretitle %}
     <a href="{% url 'cards:hero-component-list' object.get_class_name.lower %}">{{ object.get_class_name }} index</a>
@@ -19,7 +20,7 @@
             <tr>
                 <th><a href="{{ object.get_absolute_url }}">{{ object }}</a></th>
                 {% for k, v in object.attributes.items %}
-                    <td>{% if v %}{{ v.operator }}{{ v.magnitude|floatformat }}{% endif %}</td>
+                    {% modifier_td v %}
                 {% endfor %}
                 <td>{{ object.special_rules }}</td>
             </tr>
