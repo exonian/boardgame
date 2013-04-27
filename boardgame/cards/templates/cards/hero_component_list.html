@@ -19,8 +19,8 @@
             {% for object in object_list %}
                 <tr>
                     <th><a href="{{ object.get_absolute_url }}">{{ object }}</a></th>
-                    {% for attribute in attributes %}
-                        <td></td>
+                    {% for k, v in object.attributes.items %}
+                        <td>{% if v %}{{ v.operator }}{{ v.magnitude }}{% endif %}</td>
                     {% endfor %}
                     <td>{{ object.special_rules }}</td>
                 </tr>
