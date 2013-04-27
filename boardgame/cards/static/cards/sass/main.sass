@@ -6,6 +6,11 @@ $equals: #666
 
 $operators: plus $plus, minus $minus, times $times, divide $divide, equals #999
 
+.modifiers-table
+    thead th,
+    td
+        text-align: center
+
 @each $operator in $operators
     @each $value in 1,2,3,4,5
         .modifier-#{nth($operator,1)}-#{$value}

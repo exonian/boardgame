@@ -1,3 +1,7 @@
+.modifiers-table thead th,
+.modifiers-table td {
+  text-align: center; }
+
 .modifier-plus-1 {
   background-color: #99ff99; }
 
