@@ -24,11 +24,6 @@ class HeroComponentMixin(object):
             'modifiers',
             'modifiers__attribute'
         )
-        for obj in queryset:
-            attrs = self.empty_attribute_dict.copy()
-            for mod in obj.modifiers.all():
-                attrs[mod.attribute.name] = mod
-            obj.attributes = attrs
         return queryset
             
     def get_model(self):
@@ -59,6 +54,15 @@ class HeroComponentMixin(object):
 class HeroComponentListView(HeroComponentMixin, ListView):
     template_name = 'cards/hero_component_list.html'
 
+    def get_queryset(self):
+        queryset = super(HeroComponentListView, self).get_queryset()
+        for obj in queryset:
+            attrs = self.empty_attribute_dict.copy()
+            for mod in obj.modifiers.all():
+                attrs[mod.attribute.name] = mod
+            obj.attributes = attrs
+        return queryset
+
     def get_context_data(self, *args, **kwargs):
         context = super(HeroComponentListView, self).get_context_data(*args, **kwargs)
         context.update({'title': self.kwargs.get('hero_component')})
@@ -67,6 +71,14 @@ class HeroComponentListView(HeroComponentMixin, ListView):
 
 class HeroComponentDetailView(HeroComponentMixin, DetailView):
     template_name = 'cards/hero_component_detail.html'
+
+    def get_object(self, queryset=None):
+        obj = super(HeroComponentDetailView, self).get_object(queryset)
+        attrs = self.empty_attribute_dict.copy()
+        for mod in obj.modifiers.all():
+            attrs[mod.attribute.name] = mod
+        obj.attributes = attrs
+        return obj
 
     def get_context_data(self, *args, **kwargs):
         context = super(HeroComponentDetailView, self).get_context_data(*args, **kwargs)
