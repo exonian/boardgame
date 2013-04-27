@@ -1,0 +1,12 @@
+$plus: #0c0
+$minus: #c00
+$times: #009
+$divide: #099
+$equals: #666
+
+$operators: plus $plus, minus $minus, times $times, divide $divide, equals #999
+
+@each $operator in $operators
+    @each $value in 1,2,3,4,5
+        .modifier-#{nth($operator,1)}-#{$value}
+            background-color: lighten( nth($operator,2), (5-$value)*10% )
