@@ -22,6 +22,14 @@ class Modifier(models.Model):
         (EQUALS, EQUALS),
     )
 
+    OPERATOR_NAMES = {
+        PLUS: 'plus',
+        MINUS: 'minus',
+        TIMES: 'times',
+        DIVIDE: 'divide',
+        EQUALS: 'equals',
+    }
+
     COMPONENT_TYPE_CHOICES = {"model__in": [
         'trait',
         'profession',
@@ -42,6 +50,12 @@ class Modifier(models.Model):
 
     def __unicode__(self):
         return u'{} {} {}'.format(self.attribute, self.operator, self.magnitude)
+
+    def css_class(self):
+        return 'modifier-{op} modifier-{op}-{val}'.format(**{
+            'op': self.OPERATOR_NAMES[self.operator],
+            'val': str(self.magnitude).split('.')[0]
+        })
 
 
 class HeroComponent(models.Model):
