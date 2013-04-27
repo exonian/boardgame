@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from django.db.models.loading import get_model
 from django.core.exceptions import ImproperlyConfigured
 from django.http import Http404
@@ -8,9 +10,25 @@ from game.models import Attribute
 
 class HeroComponentMixin(object):
 
+    def get(self, request, *args, **kwargs):
+        self.empty_attribute_dict = self.get_empty_attribute_dict()
+        return super(HeroComponentMixin, self).get(request, *args, **kwargs)
+
+    def get_empty_attribute_dict(self):
+        attributes = Attribute.objects.all()
+        return OrderedDict([(i.name, None) for i in attributes])
+
     def get_queryset(self):
         model = self.get_model()
-        queryset = model._default_manager.prefetch_related('modifiers')
+        queryset = model._default_manager.prefetch_related(
+            'modifiers',
+            'modifiers__attribute'
+        )
+        for obj in queryset:
+            attrs = self.empty_attribute_dict.copy()
+            for mod in obj.modifiers.all():
+                attrs[mod.attribute.name] = mod
+            obj.attributes = attrs
         return queryset
             
     def get_model(self):
@@ -34,7 +52,7 @@ class HeroComponentMixin(object):
 
     def get_context_data(self, *args, **kwargs):
         context = super(HeroComponentMixin, self).get_context_data(*args, **kwargs)
-        context.update({'attributes': Attribute.objects.all()})
+        context.update({'attributes': self.empty_attribute_dict.keys()})
         return context
 
 
