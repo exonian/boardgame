@@ -3,6 +3,8 @@ from django.core.exceptions import ImproperlyConfigured
 from django.http import Http404
 from django.views.generic import DetailView, ListView
 
+from game.models import Attribute
+
 
 class HeroComponentMixin(object):
 
@@ -29,6 +31,11 @@ class HeroComponentMixin(object):
 
     def get_model_by_name(self, model_name):
         return get_model('cards', model_name)
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(HeroComponentMixin, self).get_context_data(*args, **kwargs)
+        context.update({'attributes': Attribute.objects.all()})
+        return context
 
 
 class HeroComponentListView(HeroComponentMixin, ListView):
