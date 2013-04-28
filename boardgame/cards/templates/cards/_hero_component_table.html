@@ -15,7 +15,7 @@
             <tr class="{% if not component.modifiers.all and not component.special_rules %}no-rule{% endif %}">
                 <th><a href="{{ component.get_absolute_url }}">{{ component }}</a></th>
                 {% for k, modifier in component.attributes.items %}
-                    <td class="{{ modifier.css_class }}">{{ modifier.operator }}{{ modifier.magnitude|floatformat }}</td>
+                    <td class="{% modifier_css_class modifier %}">{{ modifier.operator }}{{ modifier.magnitude|floatformat }}</td>
                 {% endfor %}
                 <td>{{ component.special_rules }}</td>
             </tr>

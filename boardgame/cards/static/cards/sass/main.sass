@@ -1,5 +1,5 @@
-$plus: #0c0
-$minus: #c00
+$plus: #090
+$minus: #b00
 $times: #009
 $divide: #099
 $equals: #666
@@ -11,10 +11,18 @@ $operators: plus $plus, minus $minus, times $times, divide $divide, equals #999
     td
         text-align: center
 
+.modifier
+    font-weight: bold
+
 @each $operator in $operators
-    @each $value in 1,2,3,4,5
+    .modifier-#{nth($operator,1)}
+        @extend modifier
+
+@each $operator in $operators
+    @for $i from 1 through 10
+        $value: $i*10
         .modifier-#{nth($operator,1)}-#{$value}
-            background-color: lighten( nth($operator,2), (5-$value)*10% )
+            background-color: scale-color( nth($operator,2), $lightness: (100-$value)*1% )
 
 tr.no-rule th
     a

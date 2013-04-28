@@ -51,10 +51,14 @@ class Modifier(models.Model):
     def __unicode__(self):
         return u'{} {} {}'.format(self.attribute, self.operator, self.magnitude)
 
+    @property
+    def operator_name(self):
+        return self.OPERATOR_NAMES[self.operator]
+
+    @property
     def css_class(self):
-        return 'modifier-{op} modifier-{op}-{val}'.format(**{
-            'op': self.OPERATOR_NAMES[self.operator],
-            'val': str(self.magnitude).split('.')[0]
+        return 'modifier-{op}'.format(**{
+            'op': self.operator_name,
         })
 
 

@@ -1,3 +1,5 @@
+from math import ceil
+
 from django import template
 from django.template.loader import get_template
 
@@ -17,3 +19,18 @@ def hero_component_table(context, components):
         'attributes': context['attributes'],
         'max_magnitude': context['max_magnitude'],
     }
+
+
+@register.simple_tag(takes_context=True)
+def modifier_css_class(context, modifier):
+    if not modifier:
+        return ''
+    magnitude = modifier.magnitude
+    max_magnitude = context['max_magnitude']
+    percentage = 100 * float(magnitude)/max_magnitude
+    step_size = 10
+    rounded_percentage = int(step_size * ceil(percentage / step_size))
+    return '{css_class} {css_class}-{percentage}'.format(**{
+        'css_class': modifier.css_class,
+        'percentage': rounded_percentage,
+    })

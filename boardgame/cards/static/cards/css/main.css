@@ -2,79 +2,157 @@
 .modifiers-table td {
   text-align: center; }
 
-.modifier-plus-1 {
-  background-color: #99ff99; }
+.modifier {
+  font-weight: bold; }
 
-.modifier-plus-2 {
-  background-color: #66ff66; }
+.modifier-plus-10 {
+  background-color: #dbffdb; }
 
-.modifier-plus-3 {
-  background-color: #33ff33; }
+.modifier-plus-20 {
+  background-color: #b8ffb8; }
 
-.modifier-plus-4 {
-  background-color: lime; }
+.modifier-plus-30 {
+  background-color: #94ff94; }
 
-.modifier-plus-5 {
-  background-color: #00cc00; }
+.modifier-plus-40 {
+  background-color: #70ff70; }
 
-.modifier-minus-1 {
-  background-color: #ff9999; }
+.modifier-plus-50 {
+  background-color: #4dff4d; }
 
-.modifier-minus-2 {
-  background-color: #ff6666; }
+.modifier-plus-60 {
+  background-color: #29ff29; }
 
-.modifier-minus-3 {
-  background-color: #ff3333; }
+.modifier-plus-70 {
+  background-color: #05ff05; }
 
-.modifier-minus-4 {
-  background-color: red; }
+.modifier-plus-80 {
+  background-color: #00e000; }
 
-.modifier-minus-5 {
-  background-color: #cc0000; }
+.modifier-plus-90 {
+  background-color: #00bd00; }
 
-.modifier-times-1 {
-  background-color: #6666ff; }
+.modifier-plus-100 {
+  background-color: #009900; }
 
-.modifier-times-2 {
-  background-color: #3333ff; }
+.modifier-minus-10 {
+  background-color: #ffdfdf; }
 
-.modifier-times-3 {
-  background-color: blue; }
+.modifier-minus-20 {
+  background-color: #ffbebe; }
 
-.modifier-times-4 {
-  background-color: #0000cc; }
+.modifier-minus-30 {
+  background-color: #ff9e9e; }
 
-.modifier-times-5 {
+.modifier-minus-40 {
+  background-color: #ff7e7e; }
+
+.modifier-minus-50 {
+  background-color: #ff5d5d; }
+
+.modifier-minus-60 {
+  background-color: #ff3d3d; }
+
+.modifier-minus-70 {
+  background-color: #ff1d1d; }
+
+.modifier-minus-80 {
+  background-color: #fc0000; }
+
+.modifier-minus-90 {
+  background-color: #db0000; }
+
+.modifier-minus-100 {
+  background-color: #bb0000; }
+
+.modifier-times-10 {
+  background-color: #dbdbff; }
+
+.modifier-times-20 {
+  background-color: #b8b8ff; }
+
+.modifier-times-30 {
+  background-color: #9494ff; }
+
+.modifier-times-40 {
+  background-color: #7070ff; }
+
+.modifier-times-50 {
+  background-color: #4d4dff; }
+
+.modifier-times-60 {
+  background-color: #2929ff; }
+
+.modifier-times-70 {
+  background-color: #0505ff; }
+
+.modifier-times-80 {
+  background-color: #0000e0; }
+
+.modifier-times-90 {
+  background-color: #0000bd; }
+
+.modifier-times-100 {
   background-color: #000099; }
 
-.modifier-divide-1 {
-  background-color: #66ffff; }
+.modifier-divide-10 {
+  background-color: #dbffff; }
 
-.modifier-divide-2 {
-  background-color: #33ffff; }
+.modifier-divide-20 {
+  background-color: #b8ffff; }
 
-.modifier-divide-3 {
-  background-color: aqua; }
+.modifier-divide-30 {
+  background-color: #94ffff; }
 
-.modifier-divide-4 {
-  background-color: #00cccc; }
+.modifier-divide-40 {
+  background-color: #70ffff; }
 
-.modifier-divide-5 {
+.modifier-divide-50 {
+  background-color: #4dffff; }
+
+.modifier-divide-60 {
+  background-color: #29ffff; }
+
+.modifier-divide-70 {
+  background-color: #05ffff; }
+
+.modifier-divide-80 {
+  background-color: #00e0e0; }
+
+.modifier-divide-90 {
+  background-color: #00bdbd; }
+
+.modifier-divide-100 {
   background-color: #009999; }
 
-.modifier-equals-1 {
-  background-color: white; }
+.modifier-equals-10 {
+  background-color: #f5f5f5; }
 
-.modifier-equals-2 {
-  background-color: #e6e6e6; }
+.modifier-equals-20 {
+  background-color: #ebebeb; }
 
-.modifier-equals-3 {
+.modifier-equals-30 {
+  background-color: #e0e0e0; }
+
+.modifier-equals-40 {
+  background-color: #d6d6d6; }
+
+.modifier-equals-50 {
   background-color: #cccccc; }
 
-.modifier-equals-4 {
-  background-color: #b3b3b3; }
+.modifier-equals-60 {
+  background-color: #c2c2c2; }
 
-.modifier-equals-5 {
+.modifier-equals-70 {
+  background-color: #b8b8b8; }
+
+.modifier-equals-80 {
+  background-color: #adadad; }
+
+.modifier-equals-90 {
+  background-color: #a3a3a3; }
+
+.modifier-equals-100 {
   background-color: #999999; }
 
 tr.no-rule th a {
