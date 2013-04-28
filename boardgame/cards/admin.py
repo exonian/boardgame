@@ -17,6 +17,7 @@ class ModifierOptions(admin.ModelAdmin):
         'generic': [['component_type', 'component_id']],
     }
     radio_fields = {
+        'component_type': admin.HORIZONTAL,
         'operator': admin.HORIZONTAL,
         'attribute': admin.HORIZONTAL,
     }
