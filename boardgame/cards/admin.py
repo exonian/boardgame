@@ -16,6 +16,11 @@ class ModifierOptions(admin.ModelAdmin):
     related_lookup_fields = {
         'generic': [['component_type', 'component_id']],
     }
+    radio_fields = {
+        'component_type': admin.VERTICAL,
+        'operator': admin.HORIZONTAL,
+        'attribute': admin.HORIZONTAL,
+    }
 
 
 admin.site.register(models.Modifier, ModifierOptions)
