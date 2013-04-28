@@ -1,0 +1,786 @@
+[
+{
+    "pk": 1, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 2
+    }
+},
+{
+    "pk": 3, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 4
+    }
+},
+{
+    "pk": 4, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 5
+    }
+},
+{
+    "pk": 5, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 5
+    }
+},
+{
+    "pk": 6, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 6
+    }
+},
+{
+    "pk": 7, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 7
+    }
+},
+{
+    "pk": 8, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 8
+    }
+},
+{
+    "pk": 9, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 8
+    }
+},
+{
+    "pk": 10, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 9
+    }
+},
+{
+    "pk": 11, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 9
+    }
+},
+{
+    "pk": 12, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 11
+    }
+},
+{
+    "pk": 13, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 12
+    }
+},
+{
+    "pk": 14, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 13
+    }
+},
+{
+    "pk": 15, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 14
+    }
+},
+{
+    "pk": 16, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 15
+    }
+},
+{
+    "pk": 17, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 16
+    }
+},
+{
+    "pk": 18, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 16
+    }
+},
+{
+    "pk": 19, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 17
+    }
+},
+{
+    "pk": 20, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 17
+    }
+},
+{
+    "pk": 21, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 19
+    }
+},
+{
+    "pk": 22, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 20
+    }
+},
+{
+    "pk": 23, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 21
+    }
+},
+{
+    "pk": 24, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 22
+    }
+},
+{
+    "pk": 25, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 22
+    }
+},
+{
+    "pk": 26, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 23
+    }
+},
+{
+    "pk": 27, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 24
+    }
+},
+{
+    "pk": 28, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 25
+    }
+},
+{
+    "pk": 29, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 26
+    }
+},
+{
+    "pk": 30, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 26
+    }
+},
+{
+    "pk": 31, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 27
+    }
+},
+{
+    "pk": 32, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 28
+    }
+},
+{
+    "pk": 33, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 30
+    }
+},
+{
+    "pk": 34, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 33
+    }
+},
+{
+    "pk": 35, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 33
+    }
+},
+{
+    "pk": 36, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 33
+    }
+},
+{
+    "pk": 37, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 3.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 33
+    }
+},
+{
+    "pk": 38, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 34
+    }
+},
+{
+    "pk": 39, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 35
+    }
+},
+{
+    "pk": 40, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 2.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 36
+    }
+},
+{
+    "pk": 41, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 37
+    }
+},
+{
+    "pk": 42, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Intelligence"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 38
+    }
+},
+{
+    "pk": 43, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 39
+    }
+},
+{
+    "pk": 44, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 40
+    }
+},
+{
+    "pk": 45, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Agility"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 41
+    }
+},
+{
+    "pk": 46, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 41
+    }
+},
+{
+    "pk": 47, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "-", 
+        "attribute": [
+            "Courage"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 42
+    }
+},
+{
+    "pk": 48, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 44
+    }
+},
+{
+    "pk": 49, 
+    "model": "cards.modifier", 
+    "fields": {
+        "operator": "+", 
+        "attribute": [
+            "Strength"
+        ], 
+        "magnitude": 1.0, 
+        "component_type": [
+            "cards", 
+            "trait"
+        ], 
+        "component_id": 45
+    }
+}
+]
