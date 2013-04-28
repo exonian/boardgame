@@ -4,6 +4,15 @@ from . import models
 
 
 class ModifierOptions(admin.ModelAdmin):
+    fields = (
+        (
+            'component_type',
+            'component_id'
+        ),
+        'operator',
+        'magnitude',
+        'attribute'
+    )
     related_lookup_fields = {
         'generic': [['component_type', 'component_id']],
     }
