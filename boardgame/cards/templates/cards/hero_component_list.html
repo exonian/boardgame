@@ -6,26 +6,5 @@
 {% endblock pretitle %}
 
 {% block content %}
-    <table class="table table-bordered modifiers-table">
-        <thead>
-            <tr>
-                <th></th>
-                {% for attribute in attributes %}
-                    <th>{{ attribute }}</th>
-                {% endfor %}
-                <th>Special rules</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for object in object_list %}
-                <tr class="{% if not object.modifiers.all and not object.special_rules %}no-rule{% endif %}">
-                    <th><a href="{{ object.get_absolute_url }}">{{ object }}</a></th>
-                    {% for k, v in object.attributes.items %}
-                        {% modifier_td v %}
-                    {% endfor %}
-                    <td>{{ object.special_rules }}</td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    {% hero_component_table object_list attributes %}
 {% endblock content %}

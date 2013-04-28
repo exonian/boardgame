@@ -1,0 +1,24 @@
+{% load modifier_tags %}
+
+<table class="table table-bordered modifiers-table">
+    <thead>
+        <tr>
+            <th></th>
+            {% for attribute in attributes %}
+                <th>{{ attribute }}</th>
+            {% endfor %}
+            <th>Special rules</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for component in components %}
+            <tr class="{% if not component.modifiers.all and not component.special_rules %}no-rule{% endif %}">
+                <th><a href="{{ component.get_absolute_url }}">{{ component }}</a></th>
+                {% for k, modifier in component.attributes.items %}
+                    <td class="{{ modifier.css_class }}">{{ modifier.operator }}{{ modifier.magnitude|floatformat }}</td>
+                {% endfor %}
+                <td>{{ component.special_rules }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
