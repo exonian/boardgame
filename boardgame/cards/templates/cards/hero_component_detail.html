@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="{% if not object.modifiers.all and not object.special_rules %}no-rule{% endif %}">
                 <th><a href="{{ object.get_absolute_url }}">{{ object }}</a></th>
                 {% for k, v in object.attributes.items %}
                     {% modifier_td v %}

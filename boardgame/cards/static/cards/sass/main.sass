@@ -15,3 +15,7 @@ $operators: plus $plus, minus $minus, times $times, divide $divide, equals #999
     @each $value in 1,2,3,4,5
         .modifier-#{nth($operator,1)}-#{$value}
             background-color: lighten( nth($operator,2), (5-$value)*10% )
+
+tr.no-rule th
+    a
+        color: #c00

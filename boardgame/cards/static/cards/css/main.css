@@ -76,3 +76,6 @@
 
 .modifier-equals-5 {
   background-color: #999999; }
+
+tr.no-rule th a {
+  color: #cc0000; }
