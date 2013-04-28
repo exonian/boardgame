@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+from django.db.models import Max
 from django.db.models.loading import get_model
 from django.core.exceptions import ImproperlyConfigured
 from django.http import Http404
@@ -24,6 +25,9 @@ class HeroComponentMixin(object):
             'modifiers',
             'modifiers__attribute'
         )
+        self.max_magnitude = queryset.aggregate(
+            Max('modifiers__magnitude')
+        ).get('modifiers__magnitude__max')
         return queryset
             
     def get_model(self):
@@ -47,7 +51,10 @@ class HeroComponentMixin(object):
 
     def get_context_data(self, *args, **kwargs):
         context = super(HeroComponentMixin, self).get_context_data(*args, **kwargs)
-        context.update({'attributes': self.empty_attribute_dict.keys()})
+        context.update({
+            'attributes': self.empty_attribute_dict.keys(),
+            'max_magnitude': self.max_magnitude
+        })
         return context
 
 
