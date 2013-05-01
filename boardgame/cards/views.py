@@ -7,6 +7,7 @@ from django.http import Http404
 from django.views.generic import DetailView, ListView
 
 from game.models import Attribute
+from .models import Defence
 
 
 class HeroComponentMixin(object):
@@ -89,5 +90,27 @@ class HeroComponentDetailView(HeroComponentMixin, DetailView):
 
     def get_context_data(self, *args, **kwargs):
         context = super(HeroComponentDetailView, self).get_context_data(*args, **kwargs)
+        context.update({'title': self.object.name })
+        return context
+
+
+class DefenceMixin(object):
+    model = Defence
+
+
+class DefenceListView(DefenceMixin, ListView):
+    template_name = 'cards/defence_list.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(DefenceListView, self).get_context_data(*args, **kwargs)
+        context.update({'title': 'Defence'})
+        return context
+
+
+class DefenceDetailView(DefenceMixin, DetailView):
+    template_name = 'cards/defence_detail.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(DefenceDetailView, self).get_context_data(*args, **kwargs)
         context.update({'title': self.object.name })
         return context
