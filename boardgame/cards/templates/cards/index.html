@@ -3,9 +3,5 @@
 {% block title %}Cards{% endblock %}
 
 {% block content %}
-    <ul>
-        <li><a href="{% url 'cards:hero-component-list' 'trait' %}">Traits</a></li>
-        <li><a href="{% url 'cards:hero-component-list' 'profession' %}">Professions</a></li>
-        <li><a href="{% url 'cards:defence-list' %}">Defences</a></li>
-    </ul>
+    <ul>{% include 'cards/_menu.html' %}</ul>
 {% endblock content %}
