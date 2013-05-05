@@ -83,7 +83,9 @@ def probability(target, modifier, sides=6):
     max_score = sides + modifier_to_value(modifier)
     ways = max_score - target_to_beat
 
-    if ways > 0:
+    if ways > sides:
+        return 1
+    elif ways > 0:
         return ways/sides
     else:
         return 0
