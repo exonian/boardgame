@@ -30,7 +30,7 @@ tr.no-rule th
     a
         color: $unlikely
 
-@for $i from 0 through 10
-    $value: $i/10
-    td[probability="#{$value}"]
+@for $i from 0 through 100
+    $value: $i/100
+    td[probability^="#{$value}"]
         background-color: adjust-color( $unlikely, $hue: $value*100% )

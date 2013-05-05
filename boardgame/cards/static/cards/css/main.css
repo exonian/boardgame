@@ -158,35 +158,305 @@
 tr.no-rule th a {
   color: #cc0000; }
 
-td[probability="0"] {
+td[probability^="0"] {
   background-color: #cc0000; }
 
-td[probability="0.1"] {
+td[probability^="0.01"] {
+  background-color: #cc0300; }
+
+td[probability^="0.02"] {
+  background-color: #cc0700; }
+
+td[probability^="0.03"] {
+  background-color: #cc0a00; }
+
+td[probability^="0.04"] {
+  background-color: #cc0e00; }
+
+td[probability^="0.05"] {
+  background-color: #cc1100; }
+
+td[probability^="0.06"] {
+  background-color: #cc1400; }
+
+td[probability^="0.07"] {
+  background-color: #cc1800; }
+
+td[probability^="0.08"] {
+  background-color: #cc1b00; }
+
+td[probability^="0.09"] {
+  background-color: #cc1f00; }
+
+td[probability^="0.1"] {
   background-color: #cc2200; }
 
-td[probability="0.2"] {
+td[probability^="0.11"] {
+  background-color: #cc2500; }
+
+td[probability^="0.12"] {
+  background-color: #cc2900; }
+
+td[probability^="0.13"] {
+  background-color: #cc2c00; }
+
+td[probability^="0.14"] {
+  background-color: #cc3000; }
+
+td[probability^="0.15"] {
+  background-color: #cc3300; }
+
+td[probability^="0.16"] {
+  background-color: #cc3600; }
+
+td[probability^="0.17"] {
+  background-color: #cc3a00; }
+
+td[probability^="0.18"] {
+  background-color: #cc3d00; }
+
+td[probability^="0.19"] {
+  background-color: #cc4100; }
+
+td[probability^="0.2"] {
   background-color: #cc4400; }
 
-td[probability="0.3"] {
+td[probability^="0.21"] {
+  background-color: #cc4700; }
+
+td[probability^="0.22"] {
+  background-color: #cc4b00; }
+
+td[probability^="0.23"] {
+  background-color: #cc4e00; }
+
+td[probability^="0.24"] {
+  background-color: #cc5200; }
+
+td[probability^="0.25"] {
+  background-color: #cc5500; }
+
+td[probability^="0.26"] {
+  background-color: #cc5800; }
+
+td[probability^="0.27"] {
+  background-color: #cc5c00; }
+
+td[probability^="0.28"] {
+  background-color: #cc5f00; }
+
+td[probability^="0.29"] {
+  background-color: #cc6300; }
+
+td[probability^="0.3"] {
   background-color: #cc6600; }
 
-td[probability="0.4"] {
+td[probability^="0.31"] {
+  background-color: #cc6900; }
+
+td[probability^="0.32"] {
+  background-color: #cc6d00; }
+
+td[probability^="0.33"] {
+  background-color: #cc7000; }
+
+td[probability^="0.34"] {
+  background-color: #cc7400; }
+
+td[probability^="0.35"] {
+  background-color: #cc7700; }
+
+td[probability^="0.36"] {
+  background-color: #cc7a00; }
+
+td[probability^="0.37"] {
+  background-color: #cc7e00; }
+
+td[probability^="0.38"] {
+  background-color: #cc8100; }
+
+td[probability^="0.39"] {
+  background-color: #cc8500; }
+
+td[probability^="0.4"] {
   background-color: #cc8800; }
 
-td[probability="0.5"] {
+td[probability^="0.41"] {
+  background-color: #cc8b00; }
+
+td[probability^="0.42"] {
+  background-color: #cc8f00; }
+
+td[probability^="0.43"] {
+  background-color: #cc9200; }
+
+td[probability^="0.44"] {
+  background-color: #cc9600; }
+
+td[probability^="0.45"] {
+  background-color: #cc9900; }
+
+td[probability^="0.46"] {
+  background-color: #cc9c00; }
+
+td[probability^="0.47"] {
+  background-color: #cca000; }
+
+td[probability^="0.48"] {
+  background-color: #cca300; }
+
+td[probability^="0.49"] {
+  background-color: #cca700; }
+
+td[probability^="0.5"] {
   background-color: #ccaa00; }
 
-td[probability="0.6"] {
+td[probability^="0.51"] {
+  background-color: #ccad00; }
+
+td[probability^="0.52"] {
+  background-color: #ccb100; }
+
+td[probability^="0.53"] {
+  background-color: #ccb400; }
+
+td[probability^="0.54"] {
+  background-color: #ccb800; }
+
+td[probability^="0.55"] {
+  background-color: #ccbb00; }
+
+td[probability^="0.56"] {
+  background-color: #ccbe00; }
+
+td[probability^="0.57"] {
+  background-color: #ccc200; }
+
+td[probability^="0.58"] {
+  background-color: #ccc500; }
+
+td[probability^="0.59"] {
+  background-color: #ccc900; }
+
+td[probability^="0.6"] {
   background-color: #cccc00; }
 
-td[probability="0.7"] {
+td[probability^="0.61"] {
+  background-color: #c9cc00; }
+
+td[probability^="0.62"] {
+  background-color: #c5cc00; }
+
+td[probability^="0.63"] {
+  background-color: #c2cc00; }
+
+td[probability^="0.64"] {
+  background-color: #becc00; }
+
+td[probability^="0.65"] {
+  background-color: #bbcc00; }
+
+td[probability^="0.66"] {
+  background-color: #b8cc00; }
+
+td[probability^="0.67"] {
+  background-color: #b4cc00; }
+
+td[probability^="0.68"] {
+  background-color: #b1cc00; }
+
+td[probability^="0.69"] {
+  background-color: #adcc00; }
+
+td[probability^="0.7"] {
   background-color: #aacc00; }
 
-td[probability="0.8"] {
+td[probability^="0.71"] {
+  background-color: #a7cc00; }
+
+td[probability^="0.72"] {
+  background-color: #a3cc00; }
+
+td[probability^="0.73"] {
+  background-color: #a0cc00; }
+
+td[probability^="0.74"] {
+  background-color: #9ccc00; }
+
+td[probability^="0.75"] {
+  background-color: #99cc00; }
+
+td[probability^="0.76"] {
+  background-color: #96cc00; }
+
+td[probability^="0.77"] {
+  background-color: #92cc00; }
+
+td[probability^="0.78"] {
+  background-color: #8fcc00; }
+
+td[probability^="0.79"] {
+  background-color: #8bcc00; }
+
+td[probability^="0.8"] {
   background-color: #88cc00; }
 
-td[probability="0.9"] {
+td[probability^="0.81"] {
+  background-color: #85cc00; }
+
+td[probability^="0.82"] {
+  background-color: #81cc00; }
+
+td[probability^="0.83"] {
+  background-color: #7ecc00; }
+
+td[probability^="0.84"] {
+  background-color: #7acc00; }
+
+td[probability^="0.85"] {
+  background-color: #77cc00; }
+
+td[probability^="0.86"] {
+  background-color: #74cc00; }
+
+td[probability^="0.87"] {
+  background-color: #70cc00; }
+
+td[probability^="0.88"] {
+  background-color: #6dcc00; }
+
+td[probability^="0.89"] {
+  background-color: #69cc00; }
+
+td[probability^="0.9"] {
   background-color: #66cc00; }
 
-td[probability="1"] {
+td[probability^="0.91"] {
+  background-color: #63cc00; }
+
+td[probability^="0.92"] {
+  background-color: #5fcc00; }
+
+td[probability^="0.93"] {
+  background-color: #5ccc00; }
+
+td[probability^="0.94"] {
+  background-color: #58cc00; }
+
+td[probability^="0.95"] {
+  background-color: #55cc00; }
+
+td[probability^="0.96"] {
+  background-color: #52cc00; }
+
+td[probability^="0.97"] {
+  background-color: #4ecc00; }
+
+td[probability^="0.98"] {
+  background-color: #4bcc00; }
+
+td[probability^="0.99"] {
+  background-color: #47cc00; }
+
+td[probability^="1"] {
   background-color: #44cc00; }
