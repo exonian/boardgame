@@ -103,7 +103,7 @@ def modifier_to_value(modifier):
 
 class HeroComponentDetailView(HeroComponentMixin, DetailView):
     template_name = 'cards/hero_component_detail.html'
-    probability_targets = range(1,11)
+    probability_targets = range(1,7)
 
     def get_object(self, queryset=None):
         obj = super(HeroComponentDetailView, self).get_object(queryset)
