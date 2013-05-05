@@ -126,7 +126,7 @@
   background-color: #009999; }
 
 .modifier-equals-10 {
-  background-color: #f5f5f5; }
+  background-color: whitesmoke; }
 
 .modifier-equals-20 {
   background-color: #ebebeb; }
@@ -157,3 +157,36 @@
 
 tr.no-rule th a {
   color: #cc0000; }
+
+td[probability="0"] {
+  background-color: #cc0000; }
+
+td[probability="0.1"] {
+  background-color: #cc2200; }
+
+td[probability="0.2"] {
+  background-color: #cc4400; }
+
+td[probability="0.3"] {
+  background-color: #cc6600; }
+
+td[probability="0.4"] {
+  background-color: #cc8800; }
+
+td[probability="0.5"] {
+  background-color: #ccaa00; }
+
+td[probability="0.6"] {
+  background-color: #cccc00; }
+
+td[probability="0.7"] {
+  background-color: #aacc00; }
+
+td[probability="0.8"] {
+  background-color: #88cc00; }
+
+td[probability="0.9"] {
+  background-color: #66cc00; }
+
+td[probability="1"] {
+  background-color: #44cc00; }

@@ -14,7 +14,7 @@
             <tr>
                 <th class="{% modifier_css_class v.modifier %}">{{ attribute }}</th>
                 {% for target, probability in v.probabilities %}
-                    <td>{{ probability|floatformat }}</td>
+                    <td probability="{{ probability|floatformat }}">{{ probability|floatformat }}</td>
                 {% endfor %}
             </tr>
         {% endfor %}
