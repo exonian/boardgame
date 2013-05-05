@@ -7,26 +7,5 @@
 
 {% block content %}
     {% hero_component_table object %}
-
-    <table class="table table-bordered modifiers-table">
-        <thead>
-            <tr>
-                <th></th>
-                {% for target in targets %}
-                    <th>{{ target }}</th>
-                {% endfor %}
-            </tr>
-        </thead>
-        <tbody>
-            {% for attribute, v in attribute_probabilities.items %}
-                <tr>
-                    <th class="{% modifier_css_class v.modifier %}">{{ attribute }}</th>
-                    {% for target, probability in v.probabilities %}
-                        <td>{{ probability|floatformat }}</td>
-                    {% endfor %}
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-
+    {% hero_component_probabilities_table %}
 {% endblock content %}

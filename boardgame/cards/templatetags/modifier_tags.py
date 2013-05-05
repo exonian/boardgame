@@ -21,6 +21,15 @@ def hero_component_table(context, components):
     }
 
 
+@register.inclusion_tag('cards/_hero_component_probabilities_table.html', takes_context=True)
+def hero_component_probabilities_table(context):
+    return {
+        'attribute_probabilities': context['attribute_probabilities'],
+        'targets': context['targets'],
+        'max_magnitude': context['max_magnitude'],
+    }
+
+
 @register.simple_tag(takes_context=True)
 def modifier_css_class(context, modifier):
     if not modifier:
