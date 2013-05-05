@@ -13,13 +13,6 @@ $operators: plus $plus, minus $minus, times $times, divide $divide, equals #999
     td
         text-align: center
 
-.modifier
-    font-weight: bold
-
-@each $operator in $operators
-    .modifier-#{nth($operator,1)}
-        @extend modifier
-
 @each $operator in $operators
     @for $i from 1 through 10
         $value: $i*10
