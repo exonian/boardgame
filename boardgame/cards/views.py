@@ -7,7 +7,7 @@ from django.http import Http404
 from django.views.generic import DetailView, ListView
 
 from game.models import Attribute
-from .models import Defence
+from .models import Defence, Modifier
 
 
 class HeroComponentMixin(object):
@@ -77,6 +77,28 @@ class HeroComponentListView(HeroComponentMixin, ListView):
         return context
 
 
+def probability(target, modifier, sides=6):
+    # success is equaling or beating the target
+    target_to_beat = float(target - 1)
+    max_score = sides + modifier_to_value(modifier)
+    ways = max_score - target_to_beat
+
+    if ways > 0:
+        return ways/sides
+    else:
+        return 0
+
+
+def modifier_to_value(modifier):
+    if not modifier:
+        return 0
+    if modifier.operator == Modifier.PLUS:
+        return modifier.magnitude
+    elif modifier.operator == Modifier.MINUS:
+        return - modifier.magnitude
+    raise NotImplementedError
+
+
 class HeroComponentDetailView(HeroComponentMixin, DetailView):
     template_name = 'cards/hero_component_detail.html'
 
@@ -88,9 +110,23 @@ class HeroComponentDetailView(HeroComponentMixin, DetailView):
         obj.attributes = attrs
         return obj
 
+    def get_probabilities_dict(self):
+        probabilities = self.empty_attribute_dict.copy()
+        for strength, modifier in self.object.attributes.items():
+            probabilities[strength] = self.get_probabilities(modifier)
+        return probabilities
+
+    def get_probabilities(self, modifier=None):
+        probabilities = []
+        for x in range(1,11):
+            probabilities.append((x, probability(x, modifier)))
+        return probabilities
+
     def get_context_data(self, *args, **kwargs):
         context = super(HeroComponentDetailView, self).get_context_data(*args, **kwargs)
-        context.update({'title': self.object.name })
+        context.update({'title': self.object.name,
+                        'attribute_probabilities': self.get_probabilities_dict(),
+                        'targets': range(1,11)})
         return context
 
 
