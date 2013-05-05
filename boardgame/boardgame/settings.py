@@ -175,3 +175,5 @@ LOGGING = {
         },
     }
 }
+
+DIE_SIDES = 6

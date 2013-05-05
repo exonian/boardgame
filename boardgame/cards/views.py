@@ -2,6 +2,7 @@ from collections import OrderedDict
 
 from django.db.models import Max
 from django.db.models.loading import get_model
+from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.http import Http404
 from django.views.generic import DetailView, ListView
@@ -77,8 +78,9 @@ class HeroComponentListView(HeroComponentMixin, ListView):
         return context
 
 
-def probability(target, modifier, sides=6):
+def probability(target, modifier):
     # success is equaling or beating the target
+    sides = settings.DIE_SIDES
     target_to_beat = float(target - 1)
     max_score = sides + modifier_to_value(modifier)
     ways = max_score - target_to_beat
@@ -103,7 +105,7 @@ def modifier_to_value(modifier):
 
 class HeroComponentDetailView(HeroComponentMixin, DetailView):
     template_name = 'cards/hero_component_detail.html'
-    probability_targets = range(1,7)
+    probability_targets = range(1, settings.DIE_SIDES + 1)
 
     def get_object(self, queryset=None):
         obj = super(HeroComponentDetailView, self).get_object(queryset)
