@@ -103,6 +103,7 @@ def modifier_to_value(modifier):
 
 class HeroComponentDetailView(HeroComponentMixin, DetailView):
     template_name = 'cards/hero_component_detail.html'
+    probability_targets = range(1,11)
 
     def get_object(self, queryset=None):
         obj = super(HeroComponentDetailView, self).get_object(queryset)
@@ -123,7 +124,7 @@ class HeroComponentDetailView(HeroComponentMixin, DetailView):
 
     def get_probabilities(self, modifier=None):
         probabilities = []
-        for x in range(1,11):
+        for x in self.probability_targets:
             probabilities.append((x, probability(x, modifier)))
         return probabilities
 
@@ -131,7 +132,7 @@ class HeroComponentDetailView(HeroComponentMixin, DetailView):
         context = super(HeroComponentDetailView, self).get_context_data(*args, **kwargs)
         context.update({'title': self.object.name,
                         'attribute_probabilities': self.get_probabilities_dict(),
-                        'targets': range(1,11)})
+                        'targets': self.probability_targets})
         return context
 
 
