@@ -115,7 +115,10 @@ class HeroComponentDetailView(HeroComponentMixin, DetailView):
     def get_probabilities_dict(self):
         probabilities = self.empty_attribute_dict.copy()
         for strength, modifier in self.object.attributes.items():
-            probabilities[strength] = self.get_probabilities(modifier)
+            probabilities[strength] = {
+                'modifier': modifier,
+                'probabilities': self.get_probabilities(modifier)
+            }
         return probabilities
 
     def get_probabilities(self, modifier=None):

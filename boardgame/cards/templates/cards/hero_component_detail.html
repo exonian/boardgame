@@ -18,10 +18,10 @@
             </tr>
         </thead>
         <tbody>
-            {% for attribute, probabilities in attribute_probabilities.items %}
+            {% for attribute, v in attribute_probabilities.items %}
                 <tr>
-                    <th>{{ attribute }}</th>
-                    {% for target, probability in probabilities %}
+                    <th class="{% modifier_css_class v.modifier %}">{{ attribute }}</th>
+                    {% for target, probability in v.probabilities %}
                         <td>{{ probability|floatformat }}</td>
                     {% endfor %}
                 </tr>
