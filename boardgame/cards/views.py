@@ -93,6 +93,12 @@ def probability(target, modifier):
         return 0
 
 
+def expectation_value(modifier):
+    unmodified_expectation_value = float(settings.DIE_SIDES + 1) / 2
+    expectation_value = unmodified_expectation_value + modifier_to_value(modifier)
+    return expectation_value
+
+
 def modifier_to_value(modifier):
     if not modifier:
         return 0
@@ -120,7 +126,8 @@ class HeroComponentDetailView(HeroComponentMixin, DetailView):
         for strength, modifier in self.object.attributes.items():
             probabilities[strength] = {
                 'modifier': modifier,
-                'probabilities': self.get_probabilities(modifier)
+                'probabilities': self.get_probabilities(modifier),
+                'expectation_value': expectation_value(modifier),
             }
         return probabilities
 
