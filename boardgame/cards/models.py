@@ -73,6 +73,7 @@ class HeroComponent(models.Model):
 
     class Meta:
         abstract = True
+        ordering = ['name']
 
     def __unicode__(self):
         return u'{}'.format(self.name)
