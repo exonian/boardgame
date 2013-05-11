@@ -47,14 +47,14 @@ class Command(BaseCommand):
         self.stdout.write('  {}'.format(self.describe_component(component)))
         edited = False
 
-        response = raw_input('    Edit special rules (y/N): ').lower()
+        response = raw_input('    Edit special rules (y/N): ')
         if response and strtobool(response):
             component = self.edit_component_special_rules(component)
             component.save()
 
         modifiers = component.modifiers.all()
         if modifiers:
-            response = raw_input('    Edit existing modifiers (y/N): ').lower()
+            response = raw_input('    Edit existing modifiers (y/N): ')
             if response and strtobool(response):
                 for modifier in modifiers:
                     self.edit_modifier(modifier)
