@@ -42,6 +42,17 @@ class Command(BaseCommand):
             self.handle_component(component)
 
     def handle_component(self, component):
-        self.stdout.write(
-            '  {}'.format(component)
+        self.stdout.write(self.describe_component(component))
+
+    def describe_component(self, component):
+        modifiers = ' '.join(
+            [m.short_form for m in component.modifiers.all()]
+        )
+        if component.special_rules:
+            rules = '{}. "{}"'.format(modifiers, component.special_rules)
+        else:
+            rules = modifiers
+        return '{}: {}'.format(
+            unicode(component),
+            rules
         )

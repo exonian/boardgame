@@ -52,6 +52,12 @@ class Modifier(models.Model):
         return u'{} {} {}'.format(self.attribute, self.operator, self.magnitude)
 
     @property
+    def short_form(self):
+        return u'{}{}{:g}'.format(self.attribute.abbreviation,
+                                self.operator,
+                                self.magnitude)
+
+    @property
     def operator_name(self):
         return self.OPERATOR_NAMES[self.operator]
 
