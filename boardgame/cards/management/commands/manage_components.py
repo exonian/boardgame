@@ -1,5 +1,6 @@
 import argparse
 
+from distutils.util import strtobool
 from django.core.management.base import BaseCommand
 
 from cards.models import Modifier, Profession, Trait
@@ -42,7 +43,21 @@ class Command(BaseCommand):
             self.handle_component(component)
 
     def handle_component(self, component):
-        self.stdout.write(self.describe_component(component))
+        self.stdout.write('')
+        self.stdout.write('  {}'.format(self.describe_component(component)))
+        edited = False
+
+        response = raw_input('    Edit special rules (y/N): ').lower()
+        if response and strtobool(response):
+            component = self.edit_component_special_rules(component)
+            component.save()
+
+        modifiers = component.modifiers.all()
+        if modifiers:
+            response = raw_input('    Edit existing modifiers (y/N): ').lower()
+            if response and strtobool(response):
+                for modifier in modifiers:
+                    self.edit_modifier(modifier)
 
     def describe_component(self, component):
         modifiers = ' '.join(
@@ -56,3 +71,11 @@ class Command(BaseCommand):
             unicode(component),
             rules
         )
+
+    def edit_component_special_rules(self, component):
+        new_special_rules = raw_input('    New special rules: ')
+        component.special_rules = new_special_rules
+        return component
+
+    def edit_modifier(self, modifier):
+        self.stdout.write('    {}'.format(modifier.short_form))
