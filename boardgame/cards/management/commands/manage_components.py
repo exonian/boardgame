@@ -38,3 +38,10 @@ class Command(BaseCommand):
                 components.count(),
                 component_class.__name__)
         )
+        for component in components:
+            self.handle_component(component)
+
+    def handle_component(self, component):
+        self.stdout.write(
+            '  {}'.format(component)
+        )
