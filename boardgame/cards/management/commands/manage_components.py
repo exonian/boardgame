@@ -25,5 +25,16 @@ class Command(BaseCommand):
         )
         
         args = parser.parse_args()
-        self.component = COMPONENT_TYPES[args.component]
-        self.stdout.write(str(self.component))
+        component_class = COMPONENT_TYPES[args.component]
+        self.handle_components(component_class)
+
+    def handle_components(self, component_class):
+        self.stdout.write(
+            'Adding modifiers to {} objects.'.format(component_class.__name__)
+        )
+        components = component_class.objects.all()
+        self.stdout.write(
+            '{} {} objects found.'.format(
+                components.count(),
+                component_class.__name__)
+        )
