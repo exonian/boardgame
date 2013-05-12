@@ -57,7 +57,7 @@ class Command(BaseCommand):
             response = raw_input('    Edit existing modifiers (y/N): ')
             if response and strtobool(response):
                 for modifier in modifiers:
-                    self.edit_modifier(modifier)
+                    self.handle_modifier(modifier)
 
     def describe_component(self, component):
         modifiers = ' '.join(
@@ -77,5 +77,26 @@ class Command(BaseCommand):
         component.special_rules = new_special_rules
         return component
 
-    def edit_modifier(self, modifier):
+    def handle_modifier(self, modifier):
         self.stdout.write('    {}'.format(modifier.short_form))
+        response = raw_input('    Edit this modifier (y/N): ')
+        if response and strtobool(response):
+            self.edit_modifier(modifier)
+
+    def edit_modifier(self, modifier):
+        response = raw_input('    Delete this modifier (y/N): ')
+        if response and strtobool(response):
+            modifier.delete()
+            self.stdout.write('    Modifier deleted')
+            return None
+        operator = raw_input('    Operator: ')
+        if operator in ['+','-','*','/']:
+            modifier.operator = operator
+        else:
+            return None
+        magnitude = raw_input('    Magnitude: ')
+        try:
+            modifier.magnitude = float(magnitude)
+        except ValueError:
+            return None
+        modifier.save()
