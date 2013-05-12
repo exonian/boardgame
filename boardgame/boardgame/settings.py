@@ -176,4 +176,4 @@ LOGGING = {
     }
 }
 
-DIE_SIDES = 6
+DIE_SIDES = 12
