@@ -12,6 +12,8 @@ COMPONENT_TYPES = {
     'trait': Trait
 }
 
+ATTRIBUTES = {a.abbreviation.lower(): a for a in Attribute.objects.all()}
+
 class Command(BaseCommand):
     def handle(self, *args, **options):
         parser = argparse.ArgumentParser(
@@ -59,6 +61,14 @@ class Command(BaseCommand):
                 for modifier in modifiers:
                     self.handle_modifier(modifier)
 
+        while True:
+            response = raw_input('    Add modifiers (y/N): ')
+            if response and strtobool(response):
+                self.add_modifier(component)
+            else:
+                break
+
+
     def describe_component(self, component):
         modifiers = ' '.join(
             [m.short_form for m in component.modifiers.all()]
@@ -83,20 +93,48 @@ class Command(BaseCommand):
         if response and strtobool(response):
             self.edit_modifier(modifier)
 
+    def set_operator(self, modifier):
+        while True:
+            operator = raw_input('    Operator (+,-,*,/): ')
+            if operator in ['+','-','*','/']:
+                modifier.operator = operator
+                return modifier
+
+    def set_magnitude(self, modifier):
+        while True:
+            magnitude = raw_input('    Magnitude: ')
+            try:
+                modifier.magnitude = float(magnitude)
+            except ValueError:
+                pass
+            else:
+                return modifier
+
+    def set_attribute(self, modifier):
+        while True:
+            attribute_abbr = raw_input('    Attribute (a/s/c/i): ').lower()
+            try:
+                attribute = ATTRIBUTES[attribute_abbr]
+            except KeyError:
+                pass
+            else:
+                modifier.attribute = attribute
+                return modifier
+
     def edit_modifier(self, modifier):
         response = raw_input('    Delete this modifier (y/N): ')
         if response and strtobool(response):
             modifier.delete()
             self.stdout.write('    Modifier deleted')
             return None
-        operator = raw_input('    Operator: ')
-        if operator in ['+','-','*','/']:
-            modifier.operator = operator
-        else:
-            return None
-        magnitude = raw_input('    Magnitude: ')
-        try:
-            modifier.magnitude = float(magnitude)
-        except ValueError:
-            return None
+        modifier = self.set_operator(modifier)
+        modifier = self.set_magnitude(modifier)
         modifier.save()
+
+    def add_modifier(self, component):
+        modifier = Modifier(component=component)
+        modifier = self.set_attribute(modifier)
+        modifier = self.set_operator(modifier)
+        modifier = self.set_magnitude(modifier)
+        modifier.save()
+        return modifier
